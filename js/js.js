@@ -66,7 +66,7 @@ function randomArrayItem(arr){
 function randomNumFrom(min, max){
     return Math.random()*(max - min) + min;
 }
-console.log(randomNumFrom(0, 10));
+console.log(randomNumFrom(0, 50));
 // Random Ball
 function getRandomBall(){
     var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -242,7 +242,7 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
-    initBalls(20);
+    initBalls(50);
     window.requestAnimationFrame(render);
 }
 goMovie();
